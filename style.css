@@ -7,6 +7,14 @@
   --danger: #ef4444;
 }
 
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -91,6 +99,9 @@ button {
   background: #475569;
   cursor: not-allowed;
 }
+.btn-primary:active {
+  transform: scale(0.95);
+}
 
 .btn-secondary {
   background: transparent;
@@ -100,6 +111,9 @@ button {
 .btn-secondary:hover {
   background: #334155;
   color: white;
+}
+.btn-secondary:active {
+  transform: scale(0.95);
 }
 
 footer {
